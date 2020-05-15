@@ -1,0 +1,54 @@
+<!-- profile athletes -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-xs-12 mx-auto">
+            <div class="card profile-card-2">
+                <div class="bg-info">
+                    <h1 class="card-title text-center text-white sport-title  mt-4">{{athlets.sport.nom }}</h1>
+                </div>
+                <div class="card-img-block">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                </div>
+                <div class="card-body py-5">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="profile-image" class="profile" />
+                    <div class="row mt-2">
+                        <div class="col-lg-7 col-md-12 text">
+                            <h5 class="text-info text-center pb-2">Information générale</h5>
+
+                            <div class="col-lg-7 col-md-12 pl-5">
+                                <div class="float-left pr-4 pl-5">
+                                    <h6 class="font-weight-bold">Nom :</h6>
+                                    <h6 class="font-weight-bold">Prénom :</h6>
+                                    <h6 class="font-weight-bold">Age :</h6>
+                                    <h6 class="font-weight-bold">Date de naissance :</h6>
+                                </div>
+                            </div>
+
+                            <div class="font-weight-bold pr-3">
+                                <h6 class="font-weight-bold">{{athlets.nom}}</h6>
+                                <h6 class="font-weight-bold">{{athlets.prenom}}</h6>
+                                <h6 class="font-weight-bold">{{athlets.age}} ans</h6>
+                                <h6 class="font-weight-bold">{{athlets.date_de_naissance}}</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-7 pb-4 text-center">
+                            <h5 class="text-info text-center pb-2">Médailles</h5>
+                            <div>
+
+                                <div class="coin gold">
+                                    <p class="medal">1</p>
+                                </div>
+                                <div class="coin silver">
+                                    <p class="medal">2</p>
+                                </div>
+                                <div class="coin bronze">
+                                    <p class="medal">3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+:host .mat-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.profile-card {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wrapper #sidebar-wrapper {
+    width: 11em;
+    margin-right: 0;
+}
+
+.sidebar-nav {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.sidebar-nav>li {
+    line-height: 42px;
+    padding: 0px 11px;
+}
+
+.sidebar-nav>li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.sidebar-nav>li>a:hover,
+.sidebar-nav>a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0px 11px;
+    background-color: #2b88aa;
+}
+
+#wrapper {
+    padding-left: 0;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    padding-top: 0;
+    margin-left: -250px;
+    background-color: #2C7AA6;
+    width: 10rem;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper #navbar-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.bg-info {
+    background-color: #33b5e5 !important;
+}
+
+a.active {
+    background-color: #33b5e5;
+    /* color: rgb(2, 18, 27); */
+}

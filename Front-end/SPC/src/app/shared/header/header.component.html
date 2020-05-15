@@ -1,0 +1,23 @@
+<!-- navbar -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row style="background-color: #2C7AA6;">
+        <span class="mr-4">APP LOGO</span>
+
+        <button mat-icon-button (click)="toggleSideBar()">
+        <mat-icon>menu</mat-icon>
+        </button>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item avatar">
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="rounded-circle z-depth-0" alt="avatar image" height="47">
+                </button>
+
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <a class="nav-link"  (click)="LogOut()"  href=""><mat-icon>exit_to_app</mat-icon>Logout</a>
+                    </button>
+                </mat-menu>
+            </li>
+        </ul>
+    </mat-toolbar-row>
+</mat-toolbar>

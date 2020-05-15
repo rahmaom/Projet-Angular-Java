@@ -1,0 +1,50 @@
+<!-- sports cards start -->
+
+<div class="containe">
+    <div class="card" *ngIf="athlets">
+        <h3 class="card-header text-center text-info font-weight-bold text-uppercase py-4">Liste des athlètes</h3>
+        <div class="card-body">
+            <div id="table" class="table-editable">
+                <span class="table-add float-right mb-3 mr-2">
+                <a class="text-info"  routerLink="/add-athlete/{{athlets[0].sport.id}}">
+                    <i class="fa fa-plus fa-2x"></i>    
+                </a>
+            </span>
+
+                <table class="table table-bordered table-responsive-md table-striped text-center">
+                    <tr>
+                        <th class="text-center font-weight-bold">nom</th>
+                        <th class="text-center font-weight-bold">prenom</th>
+                        <th class="text-center font-weight-bold">age</th>
+                        <th class="text-center font-weight-bold">sport</th>
+                        <th class="text-center font-weight-bold">Remove</th>
+                    </tr>
+                    <tr *ngFor="let athlet of athlets">
+                        <td>
+                            <span> {{athlet.nom}}</span>
+                        </td>
+                        <td>
+                            <span> {{athlet.prenom}}</span>
+                        </td>
+                        <td>
+                            <span> {{athlet.age}}</span>
+                        </td>
+                        <td>
+                            <span> {{athlet.sport.nom}}</span>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm btn-rounded" (click)="deleteAthlete(athlet.id)">
+                <i class="fa fa-trash fa-2x"></i>
+            </button>
+                            <button type="button" routerLink="/athlete/{{athlet.id}}" class="btn btn-info btn-sm btn-rounded">
+                <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+            </button>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sports cards End -->

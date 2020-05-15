@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-lg-8 col-md-6 col-xd-12 mx-auto">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb blue-text">
+                <li class="breadcrumb-item"><a routerLink="" routerLinkActive="">Acceuil</a></li>
+                <li class="breadcrumb-item"><a routerLink="/clube-sports" routerLinkActive="">Sports</a></li>
+                <li class="breadcrumb-item"><a routerLink="/add-sport" routerLinkActive="">Ajouter un sport</a></li>
+            </ol>
+        </nav>
+
+
+
+        <div class="modal-dialog cascading-modal" role="document">
+
+            <div class="modal-content">
+
+                <!--Header-->
+                <div class="modal-header info-color white-text">
+                    <h4 class="title">
+                        <i class="fa fa-pencil-alt"></i> Ajouter un sport</h4>
+                    <button type="button" class="close waves-effect waves-light">
+        </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <form [formGroup]="checkoutForm1" (ngSubmit)="onSubmit1(checkoutForm1.value)">
+
+                        <!-- Material input sport -->
+                        <div class="md-form form-sm">
+                            <input type="text" id="sport" class="form-control form-control-sm" formControlName="nom">
+                            <label for="sport">Entrer un sport</label>
+                        </div>
+                        <!--  Material upload file-->
+                        <div class="input-group mt-5">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="upload" formControlName="image" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="upload">Choisi un photo de sport</label>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4 mb-2">
+                            <button class="btn btn-info"> <i class="fa fa-plus mr-2"></i>Ajouter
+                      </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

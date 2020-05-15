@@ -1,0 +1,21 @@
+.row {
+    background: rgba(47, 129, 184, 0.9);
+}
+
+.textline {
+    line-height: 2em;
+}
+
+.text-info {
+    color: #18577f !important;
+}
+
+.image {
+    width: 29em;
+    height: 11em;
+    padding-right: 4rem;
+}
+
+.modal-content {
+    border-radius: 0;
+}

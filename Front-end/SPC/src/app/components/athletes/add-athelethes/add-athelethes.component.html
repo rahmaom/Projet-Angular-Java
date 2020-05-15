@@ -1,0 +1,64 @@
+<!-- form d'ajout des athlètes -->
+<div class="row">
+    <div class="col-lg-8 col-md-6 col-xd-12 mx-auto">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb blue-text">
+                <li class="breadcrumb-item"><a routerLink="" routerLinkActive="">Acceuil</a></li>
+                <li class="breadcrumb-item"><a routerLink="/sports" routerLinkActive="">Athlètes</a></li>
+                <li class="breadcrumb-item"><a routerLink="" routerLinkActive="">Ajouter un Athlète</a></li>
+            </ol>
+        </nav>
+
+
+
+        <div class="modal-dialog cascading-modal" role="document">
+
+            <div class="modal-content">
+
+                <!--Header-->
+                <div class="modal-header info-color white-text">
+                    <h4 class="title">
+                        <i class="fa fa-pencil-alt"></i> Ajouter un Athlète</h4>
+                    <button type="button" class="close waves-effect waves-light">
+        </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <form [formGroup]="checkoutForm1" (ngSubmit)="onSubmit1(checkoutForm1.value)">
+                        <!-- Material input nom -->
+                        <div class="md-form form-sm my-4">
+                            <input type="text" id="nom" class="form-control form-control-sm" formControlName="nom">
+                            <label for="nom">Entrer un nom</label>
+                        </div>
+                        <!-- Material input prenom -->
+                        <div class="md-form form-sm my-4">
+                            <input type="text" id="prenom" class="form-control form-control-sm" formControlName="prenom">
+                            <label for="prenom">Entrer un prénom</label>
+                        </div>
+                        <!-- Material input age -->
+                        <div class="md-form form-sm my-4">
+                            <input type="number" id="age" class="form-control form-control-sm" formControlName="age">
+                            <label for="age">Entrer l'age</label>
+                        </div>
+                        <!-- Material input dateNaissance -->
+                        <div class="md-form form-sm my-5">
+                            <input type="date" id="dateNaissance" class="form-control form-control-sm" placeholder="" formControlName="date_de_naissance">
+                            <label for="dateNaissance">Entrer la date de naissance</label>
+                        </div>
+                        <!--  Material upload file-->
+                        <div class="input-group mt-5">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="upload" aria-describedby="inputGroupfileAddon01" formControlName="image">
+                                <label class="custom-file-label" for="upload">Choisir une image</label>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4 mb-2">
+                            <button class="btn btn-info"> <i class="fa fa-plus mr-2"></i>Ajouter
+                        </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

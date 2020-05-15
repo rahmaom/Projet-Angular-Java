@@ -1,0 +1,40 @@
+/* * {
+    height: 100vh;
+} */
+
+.top {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    margin-left: 0;
+}
+
+h6 {
+    font-size: smaller;
+}
+
+.card-body {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.btn-color {
+    background-color: #33b5e5;
+    color: white;
+}
+
+.border-left-info {
+    border-left: .5rem solid #19b0f5!important;
+}
+
+.text-info {
+    color: #19b0f5!important;
+}
+
+.border-left-light {
+    border-left: .5rem solid #33b5e5!important;
+}
+
+.text-light {
+    color: #33b5e5!important;
+}

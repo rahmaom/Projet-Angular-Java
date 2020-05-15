@@ -1,0 +1,65 @@
+<div class="container mt-5">
+    <div class="row" id="sec1">
+        <div class="col-lg-6">
+            <div class="text-center">
+                <img src="https://media.discordapp.net/attachments/669099100473655316/671776191635783680/55VpLtGss.png?width=1215&height=356" class="image img-fluid" alt="">
+            </div>
+            <div class="textline text-white text-center mx-4 px-5">
+                <h1>SPC</h1>
+                <br>
+                <p>Le rôle pricipal de cette plateforme est le suivi national des sportifs sur tous les Sports à tous ages , de leurs performances ; Leur Santé, Etc..</p>
+            </div>
+        </div>
+        <div class="modal-content form-elegant col-lg-6">
+
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h3 class="modal-title w-100 text-info font-weight-bold my-3"><strong>Se connecter</strong></h3>
+            </div>
+            <!--Body-->
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+                <div class="form-group modal-body mx-4">
+                    <div class="md-form mb-5">
+                        <input type="text" id="username" class="form-control validate" formControlName="username">
+                        <label data-error="wrong" data-success="right" for="username">Nom d'utilisateur</label>
+                        <!-- <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                            <div *ngIf="f.username.errors.required">First Name is required</div>
+                        </div> -->
+                        <div *ngIf="loginForm.get('username').invalid && loginForm.get('username').touched" class="alert alert-danger">
+                            <div *ngIf="loginForm.get('username').errors.required">
+                                Ce champ est obligatoire !
+                            </div>
+
+                            <div *ngIf="loginForm.get('username').errors.minlength">
+                                Ce champ doit comporter plus de 6 caractères !
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group md-form pb-3">
+                        <input type="password" id="password" class="form-control validate" formControlName="password">
+                        <label data-error="wrong" data-success="right" for="password">Mot de passe
+                    </label>
+                        <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched" class="alert alert-danger">
+                            <div *ngIf="loginForm.get('password').errors.required">
+                                Ce champ est obligatoire !
+                            </div>
+
+                            <div *ngIf="loginForm.get('password').errors.minlength">
+                                Ce champ doit comporter plus de 6 caractères !
+                            </div>
+                        </div>
+                        <!-- <p class="font-small blue-text d-flex justify-content-end"> <a href="#" class="blue-text ml-1">
+                    Mot de pass?</a>oublier</p> -->
+                    </div>
+
+                    <div class="text-center mb-5">
+                        <button type="submit" class="btn blue-gradient btn-block btn-rounded z-depth-1a" [disabled]="loginForm.invalid">
+                            Se connecter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
