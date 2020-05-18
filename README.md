@@ -25,6 +25,9 @@ back-end folder is the Spring boot
 ![preview](preview2.PNG)
 ![preview](preview3.PNG)
 ![preview](preview5.PNG)
+![preview](login.PNG)
+![preview](club.PNG)
+![preview](athlètes.PNG)
 
 
 ## API
